@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Pedro Voginski Gonçalves</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header class="container mainHeader">
+        <div class="profile-info">
+            <img src="img/foto.webp" alt="Foto de Perfil" class="profile-picture">
+            <div class="profile-text">
+                <h1><a href="#" onclick="mostrarSecao('contato')">João Pedro Voginski Gonçalves</a></h1>
+                <p>Desenvolvedor de Software</p>
+            </div>
+        </div>
+        <nav class="nav-buttons">
+            <a href="#" onclick="mostrarSecao('formacao')">Formação</a>
+            <a href="#" onclick="mostrarSecao('experiencia')">Experiência Profissional</a>
+            <a href="#" onclick="mostrarSecao('habilidades')">Habilidades</a>
+            <a href="#" onclick="mostrarSecao('projetos')">Projetos</a>
+        </nav>
+    </header>
+
+
+    <main class="container">
+        <section id="formacao" style="display: none;">
+            <h2>Formação</h2>
+            <p>Montagem e Manutenção de Computadores e Redes: New Life (2013)</p>
+            <p>Técnico em Eletrônica: Instituto Estadual Cecy Leite Costa (concluído em 2022)</p>
+            <p>Ciências da Computação: Atitus Educação (em andamento)</p>
+            
+        </section>
+
+        <section id="experiencia" style="display: none;">
+            <h2>Experiência Profissional</h2>
+            <p>Estágio em Manutenção de Equipamentos de Refrigeração: Adroel Refrigeração (2020-2022)</p>
+            <p>Adroel Refrigeração: Gerente de Manutenção (2022 - presente)</p>
+        </section>
+
+        <section id="habilidades" style="display: none;">
+            <h2>Habilidades</h2>
+            <p>Programação: C++, Java, Python</p>
+            <img src="img/c.png" alt="Exemplo">
+            <img src="img/java.png" alt="Exemplo">
+            <img src="img/python.png" alt="Exemplo">
+            <p>Eletrônica: Montagem e reparo de circuitos eletrônicos</p>
+            <p>Manutenção: Equipamentos de refrigeração comercial, computadores e redes</p>
+            <p>Comunicação: Escrita e verbal</p>
+            <p>Trabalho em equipe: Experiência em projetos colaborativos</p>
+        </section>
+
+        <section id="projetos" style="display: none;">
+            <h2>Projetos</h2>
+            <ul>
+                <li>
+                    <h3>Desenvolvimento e Montagem de um Gerador Eólico</h3>
+                    <p>Montagem do circuito eletrônico e parte mecanica</p>
+                    <p>Sistema interno de engrenagens para aumentar a velocidade do eixo do gerador</p>
+                    <img src="img/Gerador-Eólico.webp" alt="Exemplo">
+                </li>
+                <li>
+                    <h3>Desenvolvimento de um Espanta Mosquito Eletrônico</h3>
+                    <p>Oscilador que emite ondas sonoras para afastar mosquitos</p>
+                    <p>Pode ser adaptado como espanta morcegos</p>
+                    <img src="img/Espanta-Mosquitos.webp" alt="NE555">
+                </li>
+                <li>
+                    <h3>Desenvolvimento de um Freezer Cervejeiro Inteligente</h3>
+                    <p>Elevador interno entrega latinhas geladas na mão do usuário</p>
+                    <p>Elaboração e programação de um sistema de controle inteligente</p>
+                </li>
+                <li>
+                    <h3>Elaboração e Programação de um Jogo</h3>
+                    <p>Jogador pilota uma nave para desviar de lasers</p>
+                    <p>Dificuldade aumenta com o tempo</p>
+                    <img src="img/GameStarWars.webp" alt="X-Wing">
+                </li>
+                <li>
+                    <h3>Elaboração de um Projeto de Campainha para Deficientes Auditivos</h3>
+                    <p>Aviso luminoso e notificação no celular quando a campainha toca</p>
+                    <p>Solução inclusiva para pessoas com deficiência auditiva</p>
+                </li>
+                <li>
+                    <h3>Elaboração de um Projeto para Aquaponia Residencial Automatizada</h3>
+                    <p>Sistema de aquaponia para produção de peixes e hortaliças em ambiente urbano</p>
+                    <p>Automatizado para facilitar o manejo</p>
+                    <img src="img/Aquaponia.webp" alt="Ciclo">
+                </li>
+            </ul>
+        </section>
+        
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>E-mail: <a href="mailto:joao13gonsalves@gmail.com">joao13gonsalves@gmail.com</a></p>
+            <p>Telefone: (54) 98407-6406</p>
+            <p><a href="https://wa.me/qr/NTNWYRSVUJMRL1">WhatsApp</a></p>
+            <p>Endereço: Rua Graciosa Pretto, 375 - Bairro Cruzeiro, Passo Fundo - RS</p>
+        </div>
+    </footer>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Todos os direitos reservados!</p>
+            <p>Desenvolvido por João Pedro Voginski Gonçalves</p>
+        </div>
+    </footer>
+
+
+    <script>
+        function mostrarSecao(id) {
+            var secoes = document.querySelectorAll('section');
+            secoes.forEach(function(secao) {
+                secao.style.display = 'none';
+            });
+
+            var secaoParaMostrar = document.getElementById(id);
+            if (secaoParaMostrar) {
+                secaoParaMostrar.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>

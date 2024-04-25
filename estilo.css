@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #13131c;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.mainHeader {
+    background-color: #13131c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 100px; 
+    height: 100px; 
+}
+
+.profile-text {
+    text-align: left;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 20px;
+}
+
+.nav-buttons a {
+    display: block;
+    background-color: #13131c;
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 25px; 
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.nav-buttons a:hover {
+    background-color: #39394a;
+    color: #fff; 
+}
+
+.footer {
+    background-color: #13131c;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer .container {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.footer h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+#formacao h2,
+#experiencia h2,
+#habilidades h2,
+#projetos h2,
+#formacao p,
+#experiencia p,
+#habilidades p,
+#projetos li{
+    color: #fff;
+}
+
+img {
+    width: 100%;
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+}
+
+#habilidades img {
+    display: inline-block;
+    max-width: 100px; 
+    height: auto; 
+    margin-right: 50px; 
+}
